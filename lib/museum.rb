@@ -12,12 +12,10 @@ class Museum
   end
 
   def recommend_exhibits(pateron)
-    #if patron's interests == exhibits
-    #return those exhibits
-    all_exhibits_name = @exhibits.map {|exhibit| exhibit.name }
-    common_interests =
-    #common_interests = @exhibits.intersection(all_exhibits_name, pateron.interests)
 
-    #if
+    #pateron.interests.map {|interest| delete(interest) unless @exhibits.include?(interest)}
+    # all_exhibits_name = @exhibits.map {|exhibit| exhibit.name }
+    # all_exhibits.each {|exhibit| patron.intestests == exhibit}
+    # common_interest = @exhibits & pateron.interests
   end
 end

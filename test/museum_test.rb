@@ -31,13 +31,13 @@ class MuseumTest < MiniTest::Test
     @dmns.add_exhibit(@gems_and_minerals)
     @dmns.add_exhibit(@dead_sea_scrolls)
     @dmns.add_exhibit(@imax)
-
+    # 
     # binding.pry
     assert_equal [@gems_and_minerals, @dead_sea_scrolls, @imax], @dmns.exhibits
   end
 
   def test_exhibits_can_be_recommended
-  
+
     @dmns.add_exhibit(@gems_and_minerals)
     @dmns.add_exhibit(@dead_sea_scrolls)
     @dmns.add_exhibit(@imax)
@@ -45,8 +45,6 @@ class MuseumTest < MiniTest::Test
     @bob.add_interest("Dead Sea Scrolls")
     @bob.add_interest("Gems and Minerals")
     @sally.add_interest("IMAX")
-
-
 
     assert_equal [@gems_and_minerals, @dead_sea_scrolls], @dmns.recommend_exhibits(@bob)
   end
